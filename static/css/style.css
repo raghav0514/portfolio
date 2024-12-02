@@ -242,8 +242,10 @@ body {
 
 @media (max-width: 768px) {
     /* Header */
+     {
     .main-header {
         padding: 2rem 1rem;
+        text-align: center;
     }
 
     .main-header h1 {
@@ -254,17 +256,17 @@ body {
         font-size: 1rem;
     }
 
-    /* Navbar */
     .navbar ul {
         flex-direction: column;
-        gap: 1rem;
+        gap: 10px;
     }
 
     .navbar li a {
-        padding: 0.5rem;
         font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+        display: block;
+        text-align: center;
     }
-
     /* Section */
     .section {
         padding: 2rem 1rem;
