@@ -1,128 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3921137370260205"
-     crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-adsense-account" content="ca-pub-3921137370260205">
-    <title>Portfolio - K Ranga Raghava Varma</title>
-    <link rel="stylesheet" href="static/css/style.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3921137370260205"
-     crossorigin="anonymous"></script>
+    <title>Karri Ranga Raghava Varma - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="main-header">
-        <h1>KARRI RANGA RAGHAVA VARMA</h1>
-        <p>Full Stack Web Developer | Data Analyst </p>
-    </header>
-
-    <!-- Navbar -->
+    <!-- Navigation -->
     <nav class="navbar">
-        <ul>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#Hobbies">Hobbies</a></li>
-            <li><a href="#Certifications & Achievements">Certifications & Achievements</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-content">
+            <div class="logo">KRV</div>
+            <ul class="nav-links">
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu" aria-label="Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
     </nav>
 
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="gradient-text">KARRI RANGA RAGHAVA VARMA</h1>
+                <p class="subtitle">Full Stack Web Developer | Data Analyst</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#profile" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="tech-stack">
+                    <i data-lucide="code" class="tech-icon"></i>
+                    <i data-lucide="database" class="tech-icon"></i>
+                    <i data-lucide="bar-chart" class="tech-icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i data-lucide="chevron-down"></i>
+        </div>
+    </header>
+
     <!-- Profile Section -->
-    <section class="section" id="profile">
-        <h2>Profile</h2>
-        <p>I'm an aspiring Python developer with hands-on experience building scalable web applications and deploying machine learning models. I enjoy working with Python frameworks, databases, and data visualization tools to create meaningful and impactful projects. I'm passionate about contributing to tech-driven organizations, bringing a collaborative mindset and a drive for innovation.</p>
+    <section id="profile" class="section">
+        <div class="container">
+            <h2 class="section-title">Profile</h2>
+            <div class="profile-content">
+                <div class="profile-text">
+                    <p>I'm an aspiring Python developer with hands-on experience building scalable web applications and deploying machine learning models. I enjoy working with Python frameworks, databases, and data visualization tools to create meaningful and impactful projects.</p>
+                    <p>I'm passionate about contributing to tech-driven organizations, bringing a collaborative mindset and a drive for innovation.</p>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years Coding</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Education Section -->
-    <section class="section" id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>BSc Data Science</strong>, Siva Sivani Degree College, Kompally, Hyderabad (2024)</li>
-            <li><strong>Intermediate (MPC)</strong>, Siva Sivani Junior College, Kompally, Hyderabad (2021)</li>
-            <li><strong>SSC</strong>, Krishnaveni Talent School, Medchal, Hyderabad (2019)</li>
-        </ul>
+    <section id="education" class="section bg-gradient">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>BSc Data Science</h3>
+                        <p>Siva Sivani Degree College, Kompally</p>
+                        <span class="year">2024</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Intermediate (MPC)</h3>
+                        <p>Siva Sivani Junior College, Kompally</p>
+                        <span class="year">2021</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>SSC</h3>
+                        <p>Krishnaveni Talent School, Medchal</p>
+                        <span class="year">2019</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Skills Section -->
-    <section class="section" id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Python, SQL, HTML, CSS</li>
-            <li>Web Development: Django, Flask</li>
-            <li>Databases: MySQL, MongoDB</li>
-            <li>Data Analysis & Visualization: Seaborn, Matplotlib, MS PowerBI</li>
-            <li>Machine Learning: Data preprocessing, neural networks, model deployment</li>
-            <li>Tools: Git, GitHub, MS Office Suite (Excel, PPT, Word)</li>
-            <li>Soft Skills: Analytical thinking, problem-solving, time management</li>
-        </ul>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i data-lucide="code-2" class="skill-icon"></i>
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="layout-template" class="skill-icon"></i>
+                    <h3>Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">React</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="database" class="skill-icon"></i>
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span class="tag">MySQL</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="bar-chart-2" class="skill-icon"></i>
+                    <h3>Data Analysis</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Seaborn</span>
+                        <span class="tag">Matplotlib</span>
+                        <span class="tag">PowerBI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="section" id="projects">
-        <h2>Projects</h2>
-        <ul class="projects">
-            <li>
-                <h3>Movie Recommendation System (Django)</h3>
-                <p>Developed a movie recommendation system using machine learning models integrated with a Django full-stack application.</p>
-            </li>
-            <li>
-                <h3>Bank Management System</h3>
-                <p>Designed a GUI-based system using Python and Tkinter with SQL for managing banking operations.</p>
-            </li>
-            <li>
-                <h3>Cyberbullying Detection Using RNN</h3>
-                <p>Built a deep learning model for text classification to detect cyberbullying, integrated with a Django framework.</p>
-            </li>
-            <li>
-                <h3>TV Repair Services Website</h3>
-                <p>Flask-based platform offering TV repair services with email notifications and CSV-based order tracking.</p>
-            </li>
-        </ul>
-    </section>
-
-    <!-- Hobbies Section -->
-    <section class="section" id="Hobbies">
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Exploring technology through tutorials and webinars</li>
-            <li>Traveling for cultural exploration and learning</li>
-            <li>Participating in online tech communities</li>
-        </ul>
-    </section>
-
-    <!-- Certifications & Achievements Section -->
-    <section class="section" id="Certifications & Achievements">
-        <h2>Certifications & Achievements</h2>
-        <ul>
-            <li>MS PowerBI Certification</li>
-            <li>Python Certification (Udemy)</li>
-            <li>Django & Flask Full-Stack Development (Udemy)</li>
-        </ul>
+    <section id="projects" class="section bg-gradient">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <i data-lucide="film" class="project-icon"></i>
+                        <h3>Movie Recommendation System</h3>
+                        <p>Developed a movie recommendation system using machine learning models integrated with a Django full-stack application.</p>
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <i data-lucide="shield-check" class="project-icon"></i>
+                        <h3>Cyberbullying Detection</h3>
+                        <p>Built a deep learning model for text classification to detect cyberbullying, integrated with a Django framework.</p>
+                        <div class="project-tags">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">RNN</span>
+                            <span class="tag">Django</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <i data-lucide="building-bank" class="project-icon"></i>
+                        <h3>Bank Management System</h3>
+                        <p>Designed a GUI-based system using Python and Tkinter with SQL for managing banking operations.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Tkinter</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <i data-lucide="tv" class="project-icon"></i>
+                        <h3>TV Repair Services Website</h3>
+                        <p>Flask-based platform offering TV repair services with email notifications and CSV-based order tracking.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flask</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">CSV</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <p>Mail: raghavavarma258@gmail.com</p>
-        <p>Phone No: +91 7674846979</p>
-       <div class="contact-buttons">
-        <a href="mailto:raghavavarma258@gmail.com">Email Me</a>
-        <a href="tel:+917674846979" class="call-btn">Call Me</a>
-        <a href="static/files/K_Ranga_Raghava_Varma_Resume.pdf" download="K_Ranga_Raghava_Varma_Resume.pdf" class="download-btn">Download Resume</a>
-        <a href="https://www.linkedin.com/in/ranga-raghava-varma-karri-505482311/" class="linkedin-btn">LinkedIn</a>
-        <a href="https://github.com/raghava0914"  class="github-btn">GitHub</a>
-    </div>
-          
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <a href="mailto:raghavavarma258@gmail.com" class="contact-card">
+                    <i data-lucide="mail" class="contact-icon"></i>
+                    <span>Email Me</span>
+                </a>
+                <a href="tel:+917674846979" class="contact-card">
+                    <i data-lucide="phone" class="contact-icon"></i>
+                    <span>Call Me</span>
+                </a>
+                <a href="static/files/K_Ranga_Raghava_Varma_Resume.pdf" class="contact-card">
+                    <i data-lucide="file-text" class="contact-icon"></i>
+                    <span>Resume</span>
+                </a>
+                <a href="https://www.linkedin.com/in/ranga-raghava-varma-karri-505482311/" class="contact-card" target="_blank">
+                    <i data-lucide="linkedin" class="contact-icon"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/raghava0914" class="contact-card" target="_blank">
+                    <i data-lucide="github" class="contact-icon"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 Karri Ranga Raghava Varma. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Karri Ranga Raghava Varma. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
